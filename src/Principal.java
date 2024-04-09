@@ -3,9 +3,10 @@ import com.aluracrsos.screnmatch.modelos.Pelicula;
 public class Principal {
     public static void main(String[] args) {
         Pelicula miPelicula = new Pelicula();
-        miPelicula.nombre = "Encanto";
-        miPelicula.fechaDeLanzamiento = 2021;
-        miPelicula.duracionEnMinutos = 120;
+        miPelicula.setNombre("Encanto")  ;
+        miPelicula.setFechaDeLanzamiento(2021);
+        miPelicula.setDuracionEnMinutos(120);
+        miPelicula.setIncluidoEnElPlan(true);
 
         miPelicula.datosDeLaPelicula();
         miPelicula.evalua(6.8);
