@@ -24,7 +24,7 @@ public class Principal {
         casaDragon.setMinutosPorEpisodio(50);
         casaDragon.setEpisodioPorTemporada(10);
         casaDragon.datosPorTitulo();
-        //System.out.println("Cantidad de Minutos por temporada : "+ casaDragon.getDuracionEnMinutos());
+
 
 
     }
