@@ -1,6 +1,8 @@
+import com.aluracrsos.screnmatch.modelos.Episodio;
 import com.aluracrsos.screnmatch.modelos.Pelicula;
 import com.aluracrsos.screnmatch.modelos.Serie;
 import com.aluracursos.scremmatch.calculos.CalculadoraDeTiempos;
+import com.aluracursos.scremmatch.calculos.FiltroRecomendaciones;
 
 
 public class Principal {
@@ -45,6 +47,17 @@ public class Principal {
         System.out.println(calculadora.getTiempoTotal());
         calculadora.incluye(casaDragon);
         System.out.println(calculadora.getTiempoTotal());
+
+        FiltroRecomendaciones filtroRecomendaciones = new FiltroRecomendaciones();
+        filtroRecomendaciones.filtra(miPelicula);
+
+        Episodio episodio = new Episodio();
+        episodio.setNumero(1);
+        episodio.setNombre("La casa Targarven");
+        episodio.setSerie(casaDragon);
+        episodio.setTotalDeVisualizaciones(300);
+
+        filtroRecomendaciones.filtra(episodio);
 
 
     }
